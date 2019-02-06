@@ -10,10 +10,12 @@ public class Main {
         System.out.println("Fibonacci   : " + mathematics.fibonacci(2));
         System.out.println("Prime       : " + mathematics.isPrime(3, 2));
         System.out.println("Factorial   : " + mathematics.factorial(5));
-        System.out.println("Prime Factor: " + mathematics.primeFactor(new ArrayList<>(), 30, 2));
+        System.out.println("Prime Factor: " + mathematics.primeFactor(new ArrayList<>(), 45, 2));
         System.out.println("=====================");
         Sentences sentences = new Sentences();
-        System.out.println("Reverse String : " + sentences.reverseString("satya syahputra", 15));
+        String val = "APA";
+        System.out.println("Reverse String  : " + sentences.reverseString(val, val.length()));
+        System.out.println("Palindrome      : " + sentences.palindrome(val));
         System.out.println("====================");
         EzPattern pattern = new EzPattern();
         System.out.println("Triangle    : \n" + pattern.triangle(5, 0, 0));
