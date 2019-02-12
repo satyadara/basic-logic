@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        /* MATHEMATICS */
         Mathematics mathematics = new Mathematics();
         System.out.println("Power       : " + mathematics.pow(2, 3));
         System.out.println("Fibonacci   : " + mathematics.fibonacci(2));
@@ -22,6 +23,8 @@ public class Main {
         System.out.println("====================");
         EzPattern pattern = new EzPattern();
         System.out.println("Triangle    : \n" + pattern.triangle(5, 0, 0));
+        System.out.println("Pascal      : \n" + pattern.pascal(6));
+        System.out.println("Floyds      : \n" + pattern.floyds(6));
     }
 
 
