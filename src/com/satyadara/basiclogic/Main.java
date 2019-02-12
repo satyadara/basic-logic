@@ -12,14 +12,17 @@ public class Main {
         System.out.println("Factorial   : " + mathematics.factorial(5));
         System.out.println("Prime Factor: " + mathematics.primeFactor(new ArrayList<>(), 45, 2));
         System.out.println("=====================");
+
+        /* SENTENCES */
         Sentences sentences = new Sentences();
-        String val = "APA";
+        String val = "WWWW";
         System.out.println("Reverse String  : " + sentences.reverseString(val, val.length()));
         System.out.println("Palindrome      : " + sentences.palindrome(val));
+        System.out.println("Palindrome 2    : " + sentences.palindromeWithoutReverseString(val));
         System.out.println("====================");
         EzPattern pattern = new EzPattern();
         System.out.println("Triangle    : \n" + pattern.triangle(5, 0, 0));
-
+        System.out.println(3/2);
     }
 
 
