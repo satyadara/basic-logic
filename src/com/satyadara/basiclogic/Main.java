@@ -21,6 +21,7 @@ public class Main {
         System.out.println("Index Of Str    : " + Sentences.indexOf("Blibli.com", "li."));
         System.out.println("Index Of Str 2  : " + Sentences.indexOf("Blibli.com", "li.", 0));
         System.out.println("Unique Chars    : " + Sentences.uniqueCharacters("unik"));
+        System.out.println("Str Permutation : " + Sentences.arePermutation("unik", "kniu"));
         /* Pattern */
         System.out.println("====================");
         System.out.println("Triangle    : \n" + EzPattern.triangle(5, 0, 0));
