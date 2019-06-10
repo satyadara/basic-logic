@@ -45,9 +45,9 @@ public class Sentences {
         return pos == s1.length() - 1 ? -1 : (s1.substring(pos, pos + s2.length()).equals(s2)) ? pos : indexOf(s1, s2, ++pos);
     }
 
-    static boolean uniqueCharacters(String str)
+    static boolean uniqueCharacters(String s1)
     {
-        char[] chArray = str.toCharArray();
+        char[] chArray = s1.toCharArray();
 
         Arrays.sort(chArray);
 
