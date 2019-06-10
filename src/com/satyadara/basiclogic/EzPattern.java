@@ -1,11 +1,11 @@
 package com.satyadara.basiclogic;
 
 class EzPattern {
-    String triangle(int n, int i, int j) {
+    static String triangle(int n, int i, int j) {
         return (j == n) ? "" : (i < j) ? "*" + triangle(n, ++i, j) : (i == j) ? "*\n" + triangle(n, 0, ++j) : "";
     }
 
-    String pascal(int rows) {
+    static String pascal(int rows) {
         StringBuilder result = new StringBuilder();
         int val = 1;
         for (int i = 0; i < rows; i++) {
@@ -26,7 +26,7 @@ class EzPattern {
         return result.toString();
     }
 
-    String floyds(int rows) {
+    static String floyds(int rows) {
         StringBuilder result = new StringBuilder();
         int num = 1;
 

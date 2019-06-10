@@ -6,27 +6,24 @@ public class Main {
 
     public static void main(String[] args) {
         /* MATHEMATICS */
-        Mathematics mathematics = new Mathematics();
-        System.out.println("Power       : " + mathematics.pow(2, 3));
-        System.out.println("Fibonacci   : " + mathematics.fibonacci(7));
-        System.out.println("Prime       : " + mathematics.isPrime(3, 2));
-        System.out.println("Factorial   : " + mathematics.factorial(5));
-        System.out.println("Prime Factor: " + mathematics.primeFactor(new ArrayList<>(), 45, 2));
+        System.out.println("Power       : " + Mathematics.pow(2, 3));
+        System.out.println("Fibonacci   : " + Mathematics.fibonacci(7));
+        System.out.println("Prime       : " + Mathematics.isPrime(3, 2));
+        System.out.println("Factorial   : " + Mathematics.factorial(5));
+        System.out.println("Prime Factor: " + Mathematics.primeFactor(new ArrayList<>(), 45, 2));
         System.out.println("=====================");
 
-        /* SENTENCES */
-        Sentences sentences = new Sentences();
+        /* Sentences */
         String val = "APA";
-        System.out.println("Reverse String  : " + sentences.reverseString(val, val.length()));
-        System.out.println("Palindrome      : " + sentences.palindrome(val));
-        System.out.println("Palindrome 2    : " + sentences.palindromeWithoutReverseString(val));
-        System.out.println("Index Of Str    : " + sentences.indexOf("Blibli.com", "li."));
-        System.out.println("Index Of Str 2  : " + sentences.indexOf("Blibli.com", "li.", 0));
+        System.out.println("Reverse String  : " + Sentences.reverseString(val, val.length()));
+        System.out.println("Palindrome      : " + Sentences.palindrome(val));
+        System.out.println("Palindrome 2    : " + Sentences.palindromeWithoutReverseString(val));
+        System.out.println("Index Of Str    : " + Sentences.indexOf("Blibli.com", "li."));
+        System.out.println("Index Of Str 2  : " + Sentences.indexOf("Blibli.com", "li.", 0));
         System.out.println("====================");
-        EzPattern pattern = new EzPattern();
-        System.out.println("Triangle    : \n" + pattern.triangle(5, 0, 0));
-        System.out.println("Pascal      : \n" + pattern.pascal(6));
-        System.out.println("Floyds      : \n" + pattern.floyds(6));
+        System.out.println("Triangle    : \n" + EzPattern.triangle(5, 0, 0));
+        System.out.println("Pascal      : \n" + EzPattern.pascal(6));
+        System.out.println("Floyds      : \n" + EzPattern.floyds(6));
     }
 
 
