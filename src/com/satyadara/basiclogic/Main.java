@@ -20,11 +20,13 @@ public class Main {
         System.out.println("Palindrome 2    : " + Sentences.palindromeWithoutReverseString(val));
         System.out.println("Index Of Str    : " + Sentences.indexOf("Blibli.com", "li."));
         System.out.println("Index Of Str 2  : " + Sentences.indexOf("Blibli.com", "li.", 0));
+        System.out.println("Unique Chars    : " + Sentences.uniqueCharacters("unik"));
+        /* Pattern */
         System.out.println("====================");
         System.out.println("Triangle    : \n" + EzPattern.triangle(5, 0, 0));
         System.out.println("Pascal      : \n" + EzPattern.pascal(6));
         System.out.println("Floyds      : \n" + EzPattern.floyds(6));
+        System.out.println("Print Parenthesis : \n");
+        EzPattern.printParenthesis(new char[2 * 3], 3);
     }
-
-
 }

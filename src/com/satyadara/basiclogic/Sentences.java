@@ -1,5 +1,7 @@
 package com.satyadara.basiclogic;
 
+import java.util.Arrays;
+
 public class Sentences {
     static String reverseString(String original, int size) {
         return size == 0 ? "" : original.charAt(size - 1) + reverseString(original, size - 1);
@@ -41,5 +43,20 @@ public class Sentences {
 
     static int indexOf(String s1, String s2, int pos) {
         return pos == s1.length() - 1 ? -1 : (s1.substring(pos, pos + s2.length()).equals(s2)) ? pos : indexOf(s1, s2, ++pos);
+    }
+
+    static boolean uniqueCharacters(String str)
+    {
+        char[] chArray = str.toCharArray();
+
+        Arrays.sort(chArray);
+
+        for (int i = 0; i < chArray.length - 1; i++) {
+            if (chArray[i] != chArray[i + 1])
+                continue;
+            else
+                return false;
+        }
+        return true;
     }
 }
