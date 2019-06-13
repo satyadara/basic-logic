@@ -22,6 +22,10 @@ public class Main {
         System.out.println("Index Of Str 2  : " + Sentences.indexOf("Blibli.com", "li.", 0));
         System.out.println("Unique Chars    : " + Sentences.uniqueCharacters("unik"));
         System.out.println("Str Permutation : " + Sentences.arePermutation("unik", "kniu"));
+        System.out.println("URLify          : " + Sentences.URLify("satya syahputra  "));
+        System.out.println("One Way         : " + Sentences.oneWay("satya syahputrax", "sx"));
+        System.out.println("Compression     : " + Sentences.compression("aaabhhiifflleejjddpp"));
+
         /* Pattern */
         System.out.println("====================");
         System.out.println("Triangle    : \n" + EzPattern.triangle(5, 0, 0));
@@ -29,5 +33,12 @@ public class Main {
         System.out.println("Floyds      : \n" + EzPattern.floyds(6));
         System.out.println("Print Parenthesis : \n");
         EzPattern.printParenthesis(new char[2 * 3], 3);
+        System.out.println("Rotate Matrix:");
+        EzPattern.rotateMatrix(4, new int[][]{
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}
+        });
     }
 }

@@ -77,4 +77,45 @@ public class Sentences {
 
         return true;
     }
+
+    static String URLify(String s1) {
+        s1 = s1.trim();
+
+        return s1.replaceAll("\\s", "%20");
+    }
+
+    static boolean oneWay(String s1, String s2) {
+        int pos = 0;
+        boolean result = false;
+        for (char c : s1.toCharArray()) {
+            if (pos < s2.length() && s2.charAt(pos) == c) {
+                pos++;
+            }
+            if (pos == s2.length()) {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
+
+    static String compression(String s1) {
+        StringBuilder result = new StringBuilder();
+        Character temp = null;
+        int counter = 0;
+        for (char c : s1.toCharArray()) {
+            System.out.print(c);
+            if (temp == null) temp = c;
+            if (temp == c) {
+                System.out.println("count");
+                counter++;
+            } else {
+                result.append(temp).append(counter);
+                temp = c;
+                counter = 1;
+            }
+        }
+        result.append(temp).append(counter);
+        return result.toString();
+    }
 }
